@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main_page</title>
+	<style type="text/css">
+
+body{
+	background-image: url(https://samuraidiner.000webhostapp.com/1.jpg);
+	background-size: cover;
+	
+	-webkit-filter: blur(0px);
+}
+.rl{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 35px;
+
+  float:left; 
+  width:49%; height: 120vh;}
+
+.tablinks1, .tablinks2 {
+	
+	margin: 10px;
+	color: white;
+	border: 1px solid #F29E20;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0,3s;
+	border-radius: 5px;
+	background-color: #333333;
+	opacity: 1,0;
+}
+div.rl button:hover {
+color: #F29E20;
+}
+div.rl button.active {}
+.tabcontent1, .tabcontent2 {
+	display: none;
+	padding: 6px 12px;
+	border-top:none;
+}
+
+h2{
+	color: white;
+}
+.tip_options {
+
+	margin: 4px;
+	color: white;
+	border: 1px solid #ff3535;
+	outline: none;
+	cursor: pointer;
+	padding: 8px 16px;
+	transition: 0,3s;
+	border-radius: 5px;
+	background-color: #333333;
+}
+iv.rl button:hover {
+color: #F29E20;
+}
+div.rl button.active {}
+
+
+ .tabcontent1, .tabcontent2 {
+	display: none;
+	padding: 6px 12px;
+	border-top:none;
+
+}
+
+.tabcontent1,.tabcontent2{
+	height: 140vh;
+	overflow-y:auto;
+}
+
+/* Track */
+.tabcontent1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #282621; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.tabcontent1::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #F29E20; 
+
+}
+.tabcontent1::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+.tabcontent2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #282621; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.tabcontent2::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #F29E20; 
+
+}
+
+.tabcontent2::-webkit-scrollbar {
+    width: 5px;
+}
+.tables{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #F29E20;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+display: inline-table;
+margin-right: 20px;
+margin-bottom: 20px;
+	font-size: 16pt;
+	color: white;
+}
+.dbltables {
+	width: 200px;
+	height: 100px;
+	border: 1px solid #F29E20;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	font-size: 16pt;
+	color: white;
+}
+}
+#calculate{width: 20%;
+background-color: #ff3535;
+color: white;}
+
+#tip{width: 10%;
+}
+
+.reservbox{ text-align: center;
+  border: 1px solid #c1b9aa;
+  width: 50%;
+  height: 60%;
+color: white;
+border-radius: 25px;
+margin: auto;}
+.reservp {font-size: 16pt;
+color: #F29E20;}
+.submit {
+margin: 10px;
+	color: white;
+	border: 1px solid #F29E20;
+	outline: none;
+	cursor: pointer;
+	background-color: #333333;
+	width: 100px;
+}
+.big{
+	color: white;
+
+}
+.small{
+	border: 1px solid #c1b9aa;
+}
+.item_top{
+}
+.item_name{
+	text-align: left;
+	font-size: 16pt;
+}
+.item_price{
+	
+	border-radius: 5px;
+	text-align: center;
+	color:white;
+	border: 1px solid #333333;
+	background-color:  #F29E20;
+
+	}
+.items{
+	
+	width: 150px;
+	height: 120px;
+	border-radius: 14px;
+
+}
+.item_total{
+	text-align: center;
+	width: 30%;
+border:1px solid #333333;}
+
+.btn_total{
+width: 20%;
+color: #F29E20;
+border: 1px solid #F29E20;
+border-radius: 5px;
+background-color: #333333
+}
+#add{width: 40%;
+border-radius: 1px;
+background-color: #F29E20;
+color: white;
+border:none;}
+}
+
+
+
+#left{
+	margin-left: 10vh;
+
+}
+#right{
+	margin-left: 10vh;
+}
+
+#main{
+  overflow: scroll;
+	height:850px;
+  border: 1px solid #F29E20;
+  position: relative;
+  justify-content: center;
+}
+
+#Takeout {
+	overflow: scroll;
+	height:850px;
+  border: 1px solid #F29E20;
+  position: relative;
+  justify-content: center;
+}
+
+#main table {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#left{
+	margin-left: 0vh;
+  float:left;
+}
+#right{
+	margin-left: 0vh;
+  float:right;
+}
+
+.boxes table tr td input {
+  padding:10px 15px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size: 0.5em;
+}
+.step {
+  border-radius:80px;
+  border:1px solid #ccc;
+  background:#80c0ff;
+  color:#FFF;
+  padding-left:1%;
+  border-bottom:3px solid #d9d9d9;
+  border-radius:2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+} 
+.behind {
+  opacity: 0.3;
+	z-index:-1;
+	position: absolute;
+	display: flex;
+  height: 100%;
+  width: 100%;
+  size: cover;
+}
+
+#step td {
+	font color: #fff;
+}
+.payment select {
+    padding: 10px;
+    margin-right: 15px;
+}
+.payment {
+    text-align: center; ;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.reservbox{ text-align: center;
+  border: 1px solid #c1b9aa;
+  width: 50%;
+  height: 60%;
+color: white;
+border-radius: 25px;
+margin: auto;}
+.reservp {font-size: 16pt;
+color: #F29E20;}
+.submit {
+margin: 10px;
+	color: white;
+	border: 1px solid #F29E20;
+	outline: none;
+	cursor: pointer;
+	background-color: #333333;
+	width: 100px;
+}
+
+.big{
+	color: white;
+	width: 100%;
+	margin: auto;
+
+}
+.small{
+	border: 1px solid #c1b9aa;
+
+
+}
+</style>
+	<script>
+
+	function opentab1(evt, tabname1) {
+	var i, tabcontent1, tablinks1;
+	tabcontent1 = document.getElementsByClassName("tabcontent1");
+	for (var i = 0; i<tabcontent1.length; i++) {
+		tabcontent1[i].style.display = "none";
+	}
+	tablinks1=document.getElementsByClassName("tablinks1");
+	for(i=0; i<tablinks1.length; i++){
+		tablinks1[i].className=tablinks1[i].className.replace(" active", "");
+	}
+document.getElementById(tabname1).style.display = "block";
+evt.currentTarget.className +=" active";
+}
+function opentab2(evt, tabname2) {
+	var i, tabcontent2, tablinks2;
+	tabcontent2 = document.getElementsByClassName("tabcontent2");
+	for (var i = 0; i<tabcontent2.length; i++) {
+		tabcontent2[i].style.display = "none";
+	}
+	tablinks2=document.getElementsByClassName("tablinks2");
+	for(i=0; i<tablinks2.length; i++){
+		tablinks2[i].className=tablinks2[i].className.replace(" active", "");
+	}
+document.getElementById(tabname2).style.display = "block";
+evt.currentTarget.className +=" active";
+}
+
+</script>
+
+</head>
+<body onload="opentab2(event, 'Reservation'), opentab1(event, 'Floorplan')";>
+<div id="container">
+	<div class="rl" ";>
+<button class="tablinks1" onclick="opentab1(event, 'Floorplan')">Floor Plan</button>
+<button class="tablinks1" onclick="opentab1(event, 'Tips'); " id='tips'>Payment</button> 
+
+<div id="Floorplan" class="tabcontent1">
+	<h3>Floor Plan</h3>
+	<p>here is a floor plan</p>
+	<body>
+</body>
+	<table><tr><td colspan="2">
+	<div class="dbltables" id="table1" onclick="startTimer()"><br/>Table1</div></td><td><div class="dbltables" id="table2" onclick="startTimer()"><br/>Table2</div><</td></tr>
+	<tr><td>
+	<div class="tables" id="table3" onclick="startTimer()"><br/>Table3</div></td><td><div class="tables" id="table4" onclick="startTimer()"><br/>Table4</div></td><td><div class="dbltables" id="table5" onclick="startTimer()"><br/>Table5</div></td>
+	</tr><tr><td>
+	<div class="tables" id="table6" onclick="startTimer()"><br/>Table6</div></td><td><div class="tables" id="table7" onclick="startTimer()"><br/>Table7</div></td><td><div class="dbltables" id="table8" onclick="startTimer()"><br/>Table8</div></td>
+	</tr><tr><td colspan="2">
+	<div class="dbltables" id="table9" onclick="startTimer()"><br/>Table9</div></td><td><div class="dbltables" id="table10" onclick="startTimer()"><br/>Table10</div></td></tr>
+</table>
+<script type="text/javascript">
+	function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onclick=function () {
+    var sixtyMinutes = 60 * 60,
+        display = document.querySelector('#table1');
+    startTimer(sixtyMinutes, display);
+};
+</script>
+
+</div>
+<div id="Tips" class="tabcontent1">
+	
+
+<div id="main">
+
+<div class="step">
+<h2>Tip calculator and payment</h2>
+</div>
+<table>
+<tr>
+<td><font color="#fff">SubTotal:</font></td>
+<td><input type="text" id="subtotalBox" size="20"/></td>
+</tr>
+<tr>
+<td><font color="#fff">Tax:</font></td>
+<td><input type="text" id="taxBox" size="20"  /></td>
+</tr>
+<tr>
+<td>Total:</td>
+<td><input type="text" id="totalBox" size="20" /></td>
+</tr>
+</table>
+<table>
+ <tr>
+ <td></td>
+
+<script>
+  window.toggle = function() { 
+    // get the Div 
+    var myDiv = document.getElementById('show');
+
+    // now toggle the visibility, depending on current state
+    if (myDiv.style.display == 'none') { 
+      // Div is visible. hide it
+      myDiv.style.display = 'block';
+    } else { 
+      // Div is hidden. show it 
+      myDiv.style.display = 'none';
+  }
+}
+         
+</script>  
+<td><input type="button" onclick="toggle()" value="Tips calculator"\></td>
+</tr>
+</table>
+
+
+<div id="show" style="display: none"> 
+<table>
+<td><font color="#fff">Tips:</font></td> 
+<script>
+
+function select(){
+	d = document.getElementById("items").value;
+	alert("Are you sure you want to add" + " " + d);
+
+	if(d == "15%"){
+		dinneramt = parseFloat(document.getElementById('totalBox').value); 
+					tipamt = dinneramt*0.15;
+					totalamt=dinneramt +tipamt;
+					document.getElementById('tamt').value=tipamt;
+					document.getElementById('total').value=totalamt;
+				}else{
+					false
+				}
+	if(d == "20%"){
+					dinneramt = parseFloat(document.getElementById('totalBox').value); 
+					tipamt = dinneramt*0.2;
+					totalamt=dinneramt +tipamt;
+					document.getElementById('tamt').value=tipamt;
+					document.getElementById('total').value=totalamt; 						
+   				}else{
+					false
+				}						
+}		
+</script>
+<td>
+	<select id="items" name="itemnum" onchange="select()">
+			<option value="" class=tip_options></option>
+			<option value="15%" id="15" class="tip_options">15%</option>
+			<option value="20%" id="20" class="tip_options">20%</option>
+	</select>		
+</td>
+</p>
+</tr>
+<tr>
+<td><font color="#fff">Custom Tip:</font></td>
+<td><input type="text" id="tip"/></td>
+</tr>
+<tr>
+<td></td>
+<script>
+function custom(){ 
+dinneramt = parseFloat(document.getElementById('totalBox').value); 
+tip_percent = parseFloat(document.getElementById('tip').value); 
+tipamt = dinneramt*tip_percent/100;
+alert("Are you sure you want to add" + " " + tip_percent + " " + "percent ?");
+totalamt=dinneramt +tipamt;
+document.getElementById('tamt').value=tipamt;             
+document.getElementById('total').value=totalamt;
+}
+</script>
+<td><input id="calculate" type="button" value="Calculate" onclick="custom()"/>
+</td>
+</tr>
+<tr>
+<td><font color="#fff">Tip amount:</font></td>
+<td><input type="text" id="tamt" size="20"></td>
+</tr>
+<tr>
+<td><font color="#fff">Grand Total:</font></td>
+<td><input type="text" id="total" size="20"/></td>
+</tr>
+
+</div>
+
+</table>
+</div>
+
+<div class="step">
+<h2>Payment information</h2>
+
+
+<table class="payment">
+
+                <form>
+                    <tr>
+                        <td><label >Owner</label></td>
+                        <td><input type="text" class="form-control" id="owner"></td>
+                    </tr>
+                    <tr>
+                        <td><label>CVV</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr >
+                        <td><label>Card Number</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr >
+                        <td><label>Expiration Date</label></td>
+                        <td><select>
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select></td>
+                        <td><select>
+                            <option value="16"> 2016</option>
+                            <option value="17"> 2017</option>
+                            <option value="18"> 2018</option>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                        </select></td>
+                    </tr>
+
+                    <div class="form-group" id="credit_cards">
+                        <img src="https://raw.githubusercontent.com/samnar2017/samnar2017.github.io/master/folder/visa.jpg" id="visa">
+                        <img src="https://raw.githubusercontent.com/samnar2017/samnar2017.github.io/master/folder/mastercard.jpg" id="mastercard">
+                        <img src="https://raw.githubusercontent.com/samnar2017/samnar2017.github.io/master/folder/amex.jpg" id="amex">
+
+                    </div>
+                    
+                </form>
+                
+            </div>  
+
+
+
+</table>
+<p><div class="form-group" id="pay-now">
+                        <button type="submit" class="btn btn-default" id="confirm-purchase">Check Out</button>
+                    </div></p>
+</div>
+</div>
+</div>
+
+
+
+
+	</div>
+	<div class="rl">
+<button class="tablinks2" id="reservation" onclick="opentab2(event, 'Reservation'), opentab1(event, 'Floorplan')">Reservation</button>
+
+<button class="tablinks2" onclick="opentab2(event, 'Takeout') ,  opentab1(event, 'Tips');" id='takeout'>Take Out
+</button>
+<button class="tablinks2" onclick="opentab2(event, 'Salesreport')">Sales Report</button>
+<div id="Reservation" class="tabcontent2">
+  <style>
+  table{}
+  td {
+  text-align: center;
+  padding: 10px;
+     margin: 20px;
+     width:100px;
+   }
+
+  </style>
+<div class="reservbox">
+<form>
+<p class="reservp">Guest information</p><br/>
+
+	
+	  <label for="name">Name : <input type="text" placeholder="Guest name" name="name"></label><br/>
+	  <br/>
+	
+	  <label for="contactnumber"> Phone: <input type="text" placeholder="Contact number" name="contactnumber"></label>
+	<br/><br/>
+<script>function selectpeople(){
+	d = document.getElementById("people").value;
+	alert( d + " " + "people were selected");
+}
+</script>
+<p class="reservp">Reservation details</p>
+	  <label>Number of guests:</label>
+	  <select id="people" onchange="selectpeople()">
+	  <option  value="0"></option>
+	  <option  value="1">1 person</option>
+	  	<option  value="2">2 people</option>
+	  	<option  value="3">3 people</option>
+	  	<option  value="4">4 people</option>
+	  </select> <br/>
+	  <br/>
+
+		<label>Date: <input id = "date" type="date" min="08/12/2017"></label><br/><br/>
+		<label>Time: </label>
+		<select>
+		<option>12.00</option>
+		<option>12.30</option>
+		<option>1.00</option>
+		<option>1.30</option>
+		<option>2.00</option>
+		<option>2.30</option>
+		<option>3.00</option>
+		<option>3.30</option>
+		<option>4.00</option>
+		<option>4.30</option>
+		<option>5.00</option>
+		<option>5.30</option>
+		<option>6.00</option>
+		<option>6.30</option>
+		<option>7.00</option>
+		<option>7.30</option>
+		<option>8.00</option>
+		<option>8.30</option>
+		<option>9.00</option>
+		<option>9.30</option>
+		<option>10.00</option>
+		<option>10.30</option>
+		</select>
+		<label>PM</label>
+
+<br/>
+    <br/>
+    <label id="comments" for="comments">Comments</label>
+          <textarea name="comments" class="comments" id="comments"></textarea>
+
+     <br/>
+     <br/>
+	 <button class="submit" onclick="reservtable()">Submit</button> <br/>
+	 </form>
+	 </div>
+</div>
+
+
+
+<div id="Takeout" class="tabcontent2">
+	<table class="big">
+	<tr>
+		<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">California roll</td><td class="item_price">$3.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/samnar2017/samnar2017.github.io/blob/master/anago.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total1("qty1",-1,"i_total1",3.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty1' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total1("qty1",1,"i_total1",3.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total1' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+	<!--second item-->
+		<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Hirame Fluke</td><td class="item_price">$7.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/fluke.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total2("qty2",-1,"i_total2",7.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty2' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total2("qty2",1,"i_total2",7.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total2' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+		<!--third item-->
+		<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Maguro Tuna</td><td class="item_price">$7.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/tuna.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total3("qty3",-1,"i_total3",7.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty3' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total3("qty3",1,"i_total3",7.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total3' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+</tr>
+<tr>
+<!--fourth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Masu Trout</td><td class="item_price">$8.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/seaTrout.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total4("qty4",-1,"i_total4",8.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty4' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total4("qty4",1,"i_total4",8.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total4' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--fifth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Kani Crab</td><td class="item_price">$8.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/crab.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total5("qty5",-1,"i_total5",8.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty5' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total5("qty5",1,"i_total5",8.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total5' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--sixth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Anago Eel</td><td class="item_price">$8.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/anago.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total6("qty6",-1,"i_total6",8.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty6' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total6("qty6",1,"i_total6",8.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total6' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+<!--seventh item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Sake Salmon</td><td class="item_price">$8.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/salmonSushi.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total7("qty7",-1,"i_total7",8.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty7' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total7("qty7",1,"i_total7",8.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total7' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+	<!--eighth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Smoked Sake</td><td class="item_price">$10.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/smokedHamachi.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total8("qty8",-1,"i_total8",10.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty8' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total8("qty8",1,"i_total8",10.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total8' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--ninth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Hotate Scallop</td><td class="item_price">$10.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/scallop.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total9("qty9",-1,"i_total9",10.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty9' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total9("qty9",1,"i_total9",10.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total9' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+</tr>
+<tr>
+<!--tenth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Hamachi Yellowtail</td><td class="item_price">$10.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/smokedHamachi.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total10("qty10",-1,"i_total10",10.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty10' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total10("qty10",1,"i_total10",10.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total10' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--eleventh item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Unagi Eel</td><td class="item_price">$10.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/uni.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total11("qty11",-1,"i_total11",10.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty11' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total11("qty11",1,"i_total11",10.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total11' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--twelth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Kanpachi Amberjack</td><td class="item_price">$12.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/kanpachi.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total12("qty12",-1,"i_total12",12.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty12' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total12("qty12",1,"i_total12",12.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total12' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+</tr>
+<tr>
+<!--thirteenth item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Botan Ebi</td><td class="item_price">$12.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/shrimp.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total13("qty13",-1,"i_total13",12.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty13' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total13("qty13",1,"i_total13",12.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total13' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--14th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Ese Ebi</td><td class="item_price">$14.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/lobster.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total14("qty14",-1,"i_total14",14.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty14' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total14("qty14",1,"i_total14",14.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total14' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--15th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Karai Ebi</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/spicyLobster.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total15("qty15",-1,"i_total15",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty15' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total15("qty15",1,"i_total15",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total15' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+			</tr>
+
+<!--16th item-->
+<tr>
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Toro Tuna</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/toro.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total16("qty16",-1,"i_total16",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty16' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total16("qty16",1,"i_total16",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total16' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--17th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Taco Octopus</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/octopus.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total17("qty17",-1,"i_total17",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty17' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total17("qty17",1,"i_total17",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total17' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+			
+<!--18th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Tamago Egg</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/egg.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total18("qty18",-1,"i_total18",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty18' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total18("qty18",1,"i_total18",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total18' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+			</tr>
+<!--19th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Binnaga Albacore</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/albacore.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total19("qty19",-1,"i_total19",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty19' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total19("qty19",1,"i_total19",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total19' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+<!--20th item-->
+
+				<td>
+			<table class="small">
+			<tr class="item_top"><td rowspan="2" class="item_name">Hedai Porgy</td><td class="item_price">$15.99</td></tr><tr><td></td></tr>
+			<tr><td colspan="2"><img class="items" src="https://github.com/sabiradavletshina/sushi_diner/blob/master/pic/bronzini.jpg?raw=true"></td></tr>
+			<tr class="item_buttom"><td colspan="2">
+
+
+<div id="purhcaseForm">
+	 <form id="purchase">
+		 
+		 <input class="btn_total" type='button' name='subtract' onclick='item_total20("qty20",-1,"i_total20",15.99);' value='-'>
+		 <input class="item_total" type='text' name='qty' id='qty20' readonly=true value="0">
+		 <input class="btn_total" type='button' name='add' onclick='item_total20("qty20",1,"i_total20",15.99);' value='+'/>
+		 
+		 <input class="item_total" type='text' name='i_total' id='i_total20' value="0" />
+      </form>
+</div>
+</td>
+			</tr>
+			<tr><td colspan="2"><button id="add" onclick="agregator()">add</button></td></tr>
+			</table>
+			</td>
+			</tr>
+
+	
+<!--<br>
+<button onClick="someFunc()">calculate</button>
+<br>
+SubTotal: <input type="text" id="subtotalBox" size="6"/><br>
+Tax: $<input type="text" id="taxBox" size="6"  /><br>
+Grand Total: $<input type="text" name="grandtotalBox" size="6" /><br>
+<br>
+
+</p>
+</div>
+</div>
+<div id="Salesreport" class="tabcontent2">
+	<h3>Sales report</h3>
+	<p>Here is sales report</p>-->
+</div>
+</div>
+</div>
+<script type="text/javascript">
+function item_total1(qty1,ud1,i_total1,value){
+ qty1=document.getElementById(qty1);
+ ud1>0?qty1.value++:qty1.value--;
+ qty1.value=Math.max(qty1.value,0);
+document.getElementById("i_total1").value=qty1.value*value;
+}
+function item_total2(qty2,ud2,i_total2,value){
+ qty2=document.getElementById(qty2);
+ ud2>0?qty2.value++:qty2.value--;
+ qty2.value=Math.max(qty2.value,0);
+ document.getElementById("i_total2").value=qty2.value*value;
+}
+
+function item_total3(qty3,ud3,i_total3,value){
+ qty3=document.getElementById(qty3);
+ ud3>0?qty3.value++:qty3.value--;
+ qty3.value=Math.max(qty3.value,0);
+document.getElementById("i_total3").value=qty3.value*value;
+}
+function item_total4(qty4,ud4,i_total4,value){
+ qty4=document.getElementById(qty4);
+ ud4>0?qty4.value++:qty4.value--;
+ qty4.value=Math.max(qty4.value,0);
+ document.getElementById("i_total4").value=qty4.value*value;
+}
+function item_total5(qty5,ud5,i_total5,value){
+ qty5=document.getElementById(qty5);
+ ud5>0?qty5.value++:qty5.value--;
+ qty5.value=Math.max(qty5.value,0);
+document.getElementById("i_total5").value=qty5.value*value;
+}
+function item_total6(qty6,ud6,i_total6,value){
+ qty6=document.getElementById(qty6);
+ ud6>0?qty6.value++:qty6.value--;
+ qty6.value=Math.max(qty6.value,0);
+ document.getElementById("i_total6").value=qty6.value*value;
+}
+
+function item_total7(qty7,ud7,i_total7,value){
+ qty7=document.getElementById(qty7);
+ ud7>0?qty7.value++:qty7.value--;
+ qty7.value=Math.max(qty7.value,0);
+document.getElementById("i_total7").value=qty7.value*value;
+}
+function item_total8(qty8,ud8,i_total8,value){
+ qty8=document.getElementById(qty8);
+ ud8>0?qty8.value++:qty8.value--;
+ qty8.value=Math.max(qty8.value,0);
+ document.getElementById("i_total8").value=qty8.value*value;
+}
+function item_total9(qty9,ud9,i_total9,value){
+ qty9=document.getElementById(qty9);
+ ud9>0?qty9.value++:qty9.value--;
+ qty9.value=Math.max(qty9.value,0);
+document.getElementById("i_total9").value=qty9.value*value;
+}
+function item_total10(qty10,ud10,i_total10,value){
+ qty10=document.getElementById(qty10);
+ ud10>0?qty10.value++:qty10.value--;
+ qty10.value=Math.max(qty10.value,0);
+ document.getElementById("i_total10").value=qty10.value*value;
+}
+
+function item_total11(qty11,ud11,i_total11,value){
+ qty11=document.getElementById(qty11);
+ ud11>0?qty11.value++:qty11.value--;
+ qty11.value=Math.max(qty11.value,0);
+document.getElementById("i_total11").value=qty11.value*value;
+}
+function item_total12(qty12,ud12,i_total12,value){
+ qty12=document.getElementById(qty12);
+ ud12>0?qty12.value++:qty12.value--;
+ qty12.value=Math.max(qty12.value,0);
+ document.getElementById("i_total12").value=qty12.value*value;
+}
+function item_total13(qty13,ud13,i_total13,value){
+ qty13=document.getElementById(qty13);
+ ud13>0?qty13.value++:qty13.value--;
+ qty13.value=Math.max(qty13.value,0);
+document.getElementById("i_total13").value=qty13.value*value;
+}
+function item_total14(qty14,ud14,i_total14,value){
+ qty14=document.getElementById(qty14);
+ ud14>0?qty14.value++:qty14.value--;
+ qty14.value=Math.max(qty14.value,0);
+ document.getElementById("i_total14").value=qty14.value*value;
+}
+
+function item_total15(qty15,ud15,i_total15,value){
+ qty15=document.getElementById(qty15);
+ ud15>0?qty15.value++:qty15.value--;
+ qty15.value=Math.max(qty15.value,0);
+document.getElementById("i_total15").value=qty15.value*value;
+}
+function item_total16(qty16,ud16,i_total16,value){
+ qty16=document.getElementById(qty16);
+ ud16>0?qty16.value++:qty16.value--;
+ qty16.value=Math.max(qty16.value,0);
+ document.getElementById("i_total16").value=qty16.value*value;
+}
+function item_total17(qty17,ud17,i_total17,value){
+ qty17=document.getElementById(qty17);
+ ud17>0?qty17.value++:qty17.value--;
+ qty17.value=Math.max(qty17.value,0);
+document.getElementById("i_total17").value=qty17.value*value;
+}
+function item_total18(qty18,ud18,i_total18,value){
+ qty18=document.getElementById(qty18);
+ ud18>0?qty18.value++:qty18.value--;
+ qty18.value=Math.max(qty18.value,0);
+ document.getElementById("i_total18").value=qty18.value*value;
+}
+
+function item_total19(qty19,ud19,i_total19,value){
+ qty19=document.getElementById(qty19);
+ ud19>0?qty19.value++:qty19.value--;
+ qty19.value=Math.max(qty19.value,0);
+document.getElementById("i_total19").value=qty19.value*value;
+}
+function item_total20(qty20,ud20,i_total20,value){
+ qty20=document.getElementById(qty20);
+ ud20>0?qty20.value++:qty20.value--;
+ qty20.value=Math.max(qty20.value,0);
+ document.getElementById("i_total20").value=qty20.value*value;
+}
+
+function subtotal(){
+	var v1 = parseFloat(+document.getElementById("i_total1").value || 0);
+	var v2 = parseFloat(+document.getElementById("i_total2").value || 0);
+	var v3 = parseFloat(+document.getElementById("i_total3").value || 0);
+	var v4 = parseFloat(+document.getElementById("i_total4").value || 0);
+	var v5 = parseFloat(+document.getElementById("i_total5").value || 0);
+	var v6 = parseFloat(+document.getElementById("i_total6").value || 0);
+	var v7 = parseFloat(+document.getElementById("i_total7").value || 0);
+	var v8 = parseFloat(+document.getElementById("i_total8").value || 0);
+	var v9 = parseFloat(+document.getElementById("i_total9").value || 0);
+	var v10 = parseFloat(+document.getElementById("i_total10").value || 0);
+	var v11 = parseFloat(+document.getElementById("i_total11").value || 0);
+	var v12 = parseFloat(+document.getElementById("i_total12").value || 0);
+	var v13 = parseFloat(+document.getElementById("i_total13").value || 0);
+	var v14 = parseFloat(+document.getElementById("i_total14").value || 0);
+	var v15 = parseFloat(+document.getElementById("i_total15").value || 0);
+	var v16 = parseFloat(+document.getElementById("i_total16").value || 0);
+	var v17 = parseFloat(+document.getElementById("i_total17").value || 0);
+	var v18 = parseFloat(+document.getElementById("i_total18").value || 0);
+	var v19 = parseFloat(+document.getElementById("i_total19").value || 0);
+	var v20 = parseFloat(+document.getElementById("i_total20").value || 0);
+	var result = [(v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 + v11 + v12 + v13 + v14 + v15 + v16 + v17 + v18 + v19 + v20)];
+	document.getElementById("subtotalBox").value = result; 
+}
+function count2()
+{
+  var tax  = parseFloat(document.getElementById("subtotalBox").value);
+  var result = (tax * 0.0878);
+  document.getElementById("taxBox").value = result;
+}
+function count3()
+{
+  var tax = parseFloat(document.getElementById("taxBox").value);
+  var subtotal = parseFloat(document.getElementById("subtotalBox").value);
+  var result = [(subtotal + tax)];
+  document.getElementById("totalBox").value = result;
+}
+function fill(){
+  var text = document.getElementById("totalBox").value;
+  document.getElementById("totalBox").value = text;
+}
+
+function agregator(){
+	subtotal();
+	count2();
+	count3();
+	fill()
+}
+
+  </script>
+
+</body>
+
+</html>
+
